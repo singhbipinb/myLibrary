@@ -8,7 +8,7 @@ app.config.from_object(Config)
 mongo = PyMongo(app)
 
 
-@app.route("")
+@app.route("/")
 def welcome():
     return make_response("Welcome to myLibrary")
 
