@@ -1,8 +1,8 @@
 from flask import make_response, request, jsonify
 import json
-from myLibrary.books import books
+from api.books import books
 from bson.json_util import dumps
-from myLibrary import mongo
+from api import mongo
 
 
 # Search by book name/term

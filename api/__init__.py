@@ -12,7 +12,7 @@ mongo = PyMongo(app)
 def welcome():
     return make_response("Welcome to myLibrary")
 
-from myLibrary.books import books as books
-from myLibrary.transactions import transaction
+from api.books import books as books
+from api.transactions import transaction
 app.register_blueprint(books)
 app.register_blueprint(transaction)

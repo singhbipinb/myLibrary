@@ -2,8 +2,8 @@ from flask import make_response, request, jsonify
 from bson.json_util import dumps
 import json
 from datetime import datetime
-from myLibrary.transactions import transaction
-from myLibrary import mongo
+from api.transactions import transaction
+from api import mongo
 
 
 # Updating the transaction when book issued and returned
